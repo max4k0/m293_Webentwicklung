@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3665ff;/*Ebene 1*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    background-color: #fbd749;/*Ebene 2*/
+    padding: 50px;
+    border: 25px solid #ff3144;/*Ebene 3*/
+    background-clip: border-box;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.box2 {
+    background-color: #1fc8ff;/*Ebene 4*/
+    padding: 20px;
+    text-align: center;
+}
