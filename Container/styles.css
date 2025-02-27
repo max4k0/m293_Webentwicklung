@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #006d6d;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, nav input {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.featured-article {
+    background-color: #ffe6e6;
+    padding: 20px;
+    margin: 20px;
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+article img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.more-entries {
+    text-align: center;
+    padding: 20px;
+}
+
+.subscription {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.subscription button {
+    background-color: #006d6d;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #006d6d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
