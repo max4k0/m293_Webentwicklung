@@ -1,0 +1,251 @@
+@use "variables" as v;
+@use "mixins"    as *;
+@use "sass:color";
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: v.$font-stack;
+  margin: 0; padding: 0;
+  background-color: v.$color-bg;
+  color: v.$color-text;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%; height: auto;
+}
+
+
+.desktop-header { display: flex; }
+.mobile-header  { display: none; }
+
+header {
+  background-color: v.$color-header;
+  color: v.$color-light;
+  @include flex(space-between, center);
+  padding: 20px;
+
+  h1 {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  img {
+    width: 512px;
+    height: 128px;
+  }
+}
+
+
+nav {
+  background-color: v.$color-nav;
+  @include flex(flex-end, center);
+  padding: 15px 20px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      color: v.$color-light;
+      text-decoration: none;
+      padding: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.subnav {
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      @include btn(v.$color-accent);
+      &:hover {
+        background-color: v.$color-accent-dark;
+      }
+    }
+  }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.sidebar {
+  background: v.$color-sidebar-bg;
+  padding: 15px;
+  padding-bottom: 150px;
+}
+.content {
+  background: v.$color-light;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.card {
+  background: v.$color-accent;
+  padding: 50px;
+  border-radius: v.$border-radius;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.input-container {
+  margin-top: 20px;
+
+  input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid v.$color-border;
+    border-radius: v.$border-radius;
+  }
+
+  button {
+    @include btn(v.$color-accent);
+    margin-top: 200px;
+  }
+}
+
+
+.button-container {
+  @include flex(center, center);
+  margin-top: 200px;
+
+  button {
+    @include btn(v.$color-accent);
+    margin: 0 5px;
+  }
+}
+
+
+footer {
+  background-color: v.$color-header;
+  color: v.$color-light;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media screen and (max-width: v.$bp-mobile) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+    @include flex(flex-start, center);
+    background-color: v.$color-header;
+    padding: 10px;
+
+    .burger-menu {
+      @include flex(null, center);
+    }
+  }
+  .burger-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: v.$color-light;
+    display: block;
+  }
+  .burger-menu input {
+    display: none;
+  }
+  .burger-nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 250px; height: 100%;
+    background-color: v.$color-burger-bg;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+
+
+    #burger-toggle:checked + .burger-icon + & {
+      transform: translateX(0);
+    }
+
+    ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 20px;
+
+      li {
+        display: block;
+        margin-bottom: 10px;
+
+        a {
+          display: block;
+          padding: 10px;
+          background-color: v.$color-burger-link;
+          color: v.$color-light;
+          text-decoration: none;
+          border-radius: 3px;
+          text-align: center;
+
+          &:hover {
+            background-color: v.$color-burger-link-hover;
+          }
+        }
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid v.$color-burger-link-hover;
+      margin: 10px 0;
+    }
+  }
+  .mobile-slider {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  nav,
+  .sidebar,
+  .subnav {
+    font-size: 14px;
+  }
+}

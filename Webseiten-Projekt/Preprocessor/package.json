@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "scss": "sass --style=expanded scss/styles.scss styles.css",
+    "opt": "node node-scripts/optimierung.js styles.css",
+    "build": "npm run scss && npm run opt"
+  },
+  "devDependencies": {
+    "sass": "^1.77.2"
+  }
+}

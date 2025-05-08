@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Demographische Datenerhebung</title>
+</head>
+<body>
+  <h1>Demographische Datenerhebung</h1>
+  <form method="get">
+    <fieldset>
+      <legend>Persönliche Angaben</legend>
+      
+      <label for="vorname">Vorname:</label>
+      <input type="text" id="vorname" name="vorname"><br><br>
+      
+      <label for="nachname">Nachname:</label>
+      <input type="text" id="nachname" name="nachname"><br><br>
+      
+      <label for="alter">Alter:</label>
+      <input type="number" id="alter" name="alter" min="0" max="120"><br><br>
+      
+      <label>Geschlecht:</label>
+      <input type="radio" id="maennlich" name="geschlecht" value="maennlich">
+      <label for="maennlich">Männlich</label>
+      <input type="radio" id="weiblich" name="geschlecht" value="weiblich">
+      <label for="weiblich">Weiblich</label>
+      <input type="radio" id="divers" name="geschlecht" value="divers">
+      <label for="divers">Divers</label>
+    </fieldset>
+    
+
+    <fieldset>
+      <legend>Kontaktinformation</legend>
+      
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email"><br><br>
+      
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon">
+    </fieldset>
+    
+
+    <fieldset>
+      <legend>Nationalität/Herkunft</legend>
+      
+      <label for="nationalitaet">Wählen Sie Ihre Nationalität:</label>
+      <select id="nationalitaet" name="nationalitaet">
+        <optgroup label="Europa">
+          <option value="deutschland">Deutschland</option>
+          <option value="frankreich">Frankreich</option>
+          <option value="spanien">Spanien</option>
+		  <option value="schweiz">Schweiz/option>
+        </optgroup>
+        <optgroup label="Asien">
+          <option value="china">China</option>
+          <option value="japan">Japan</option>
+          <option value="indien">Indien</option>
+        </optgroup>
+        <optgroup label="Amerika">
+          <option value="usa">USA</option>
+          <option value="kanada">Kanada</option>
+          <option value="mexiko">Mexiko</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Bildungsstand</legend>
+      
+      <label for="bildung">Abschluss:</label>
+      <select id="bildung" name="bildung">
+        <optgroup label="Schulbildung">
+		<option value="keinabschluss">Kein Abschluss</option>
+		<option value="sonderschule">Sonderschule</option>
+          <option value="hauptschule">Hauptschule</option>
+          <option value="realschule">Realschule</option>
+          <option value="gymnasium">Gymnasium</option>
+        </optgroup>
+        <optgroup label="Hochschulbildung">
+          <option value="bachelor">Bachelor</option>
+          <option value="master">Master</option>
+          <option value="doktor">Doktor</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    
+    <button type="submit">Absenden</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+open jqe06322.bplaced.net
+jqe06322
+BqbHx!c5Z.Z!Ce7
+bin
+lcd .
+cd /www/
+passive
+prompt off
+mput *.*
+bye

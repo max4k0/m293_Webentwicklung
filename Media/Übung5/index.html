@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übung5 – Picture Tag & Galerie</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      gap: 1em;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border: 1px solid #ccc;
+      object-fit: cover;
+      display: block;
+    }
+    picture {
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    picture img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    p {
+      max-width: 600px;
+      margin: 1em auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>2. Responsive Bild</h2>
+  <picture>
+    <source
+      media="(orientation: landscape)"
+      srcset="bilder/1.jpg">
+    <source
+      media="(orientation: portrait)"
+      srcset="bilder/2.jpg">
+    <img
+      src="bilder/3.jpg"
+      alt="Responsive Landschaft"
+      loading="lazy">
+  </picture>
+
+  <p>Je nach Ausrichtung zeigt der Browser das Querformat 1.jpg oder das Hochformat 2.jpg. Läuft beides nicht, dann wird 3.jpg geladen.</p>
+</body>
+</html>

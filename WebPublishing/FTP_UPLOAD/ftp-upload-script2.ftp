@@ -1,0 +1,10 @@
+open jqe06322.bplaced.net
+jqe06322
+BqbHx!c5Z.Z!Ce7
+bin
+lcd C:\Users\Max\Desktop\Programmierung\m293_Webentwicklung\WebPublishing\FTP_UPLOAD\Upload
+cd /www/
+quote PASV
+prompt off
+mput *.*
+bye

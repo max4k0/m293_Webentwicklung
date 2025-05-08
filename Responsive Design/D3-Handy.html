@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p.price {
+            color: #008080;
+            font-weight: bold;
+        }
+
+        .btn-buy {
+            background-color: #008080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (min-width: 768px) {
+            header {
+                font-size: 1.2em;
+                padding: 20px;
+            }
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            header {
+                font-size: 1.4em;
+            }
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile Shop</h1>
+    </header>
+
+    <main>
+        <section class="product-grid">
+            <div class="product">
+                <img src="https://visible.scene7.com/is/image/visible/A26%205G_Black_Front%20R30_RGB%201?$WebP$" alt="Samsung Galaxy A22 5G">
+                <h3>Samsung Galaxy A22 5G</h3>
+                <p class="price">299€</p>
+                <button class="btn-buy">Kaufen</button>
+            </div>
+
+            <div class="product">
+                <img src="https://image01-in.oneplus.net/media/202503/25/a8f8fdbe9febb652286af072a5429666.png?x-amz-process=image/format,webp/quality,Q_80" alt="OnePlus 9 Pro">
+                <h3>OnePlus 9 Pro</h3>
+                <p class="price">349€</p>
+                <button class="btn-buy">Kaufen</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.buyzone.lk/wp-content/uploads/2024/01/jpeg-optimizer_2391-430x430.jpg" alt="Samsung Galaxy A26 5G">
+                <h3>Samsung Galaxy A26 5G</h3>
+                <p class="price">399€</p>
+                <button class="btn-buy">Kaufen</button>
+            </div>
+
+            <div class="product">
+                <img src="https://shop.fairphone.com/theme_fairphone/static/src/img/webshop_page_migrate/fp5green_carouselshop" alt="fairphone">
+                <h3>fairphone</h3>
+                <p class="price">199€</p>
+                <button class="btn-buy">Kaufen</button>
+            </div>
+
+            <div class="product">
+                <img src="https://assets.mobilezone.ch/product-item/0cbde43e9d7f8446f13db3a0b445540eb15f03ef/image.jpg" alt="Samsung galaxy s24">
+                <h3>Samsung galaxy s24</h3>
+                <p class="price">990€</p>
+                <button class="btn-buy">Kaufen</button>
+            </div>
+
+            <div class="product">
+                <img src="https://phones.mintmobile.com/wp-content/uploads/2024/08/Samsung_Galazy_Z_Fold_6_5G_silver_front1.png" alt="Samsung Galazy Z Fold 6 5G">
+                <h3>Samsung Galazy Z Fold 6 5G</h3>
+                <p class="price">190€</p>
+                <button class="btn-buy">Kaufen</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mobile Shop - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

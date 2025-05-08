@@ -1,0 +1,9 @@
+{
+  "name": "uebung3-carousel",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

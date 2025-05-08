@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Lernmodus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+
+
+  <main class="grid-container">
+    <aside class="sidebar">
+      <h2>Lektionen</h2>
+      <ul id="lesson-list">
+
+      </ul>
+    </aside>
+
+    <section class="content">
+      <nav class="subnav">
+        <ul>
+          <li><a href="lernmodus.html" class="active">Lernmodus</a></li>
+          <li><a href="kartenmodus.html">Kartenmodus</a></li>
+
+        </ul>
+      </nav>
+
+      <div class="card-container">
+        <div class="card" id="learn-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <span id="word-en">JavaScript aktivieren</span>
+            </div>
+            <div class="card-back">
+              <div>
+                <p><span id="word-de"></span></p>
+                <p id="feedback"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="answer-container">
+        <input type="text" id="answer-input" placeholder="Deutsche Übersetzung">
+        <button id="send-btn">Senden</button>
+      </div>
+      <button id="next-btn" class="hidden">Nächste Abfrage</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>All Rights Reserved</p>
+  </footer>
+</body>
+</html>

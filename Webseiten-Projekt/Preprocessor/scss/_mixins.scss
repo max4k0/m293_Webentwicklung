@@ -1,0 +1,36 @@
+@use "variables" as v;
+@use "sass:color";
+
+//container
+@mixin flex($jc: center, $ai: center, $gap: 0) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+//buttons
+@mixin btn($bg, $fg: v.$color-light) {
+  @include flex(center, center);
+  padding: .6rem 1rem;
+  background: $bg;
+  color: $fg;
+  border: none;
+  border-radius: v.$border-radius;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background v.$transition-fast;
+
+  &:hover {
+    background: color.adjust($bg, $lightness: -8%);
+  }
+}
+
+//skallierung
+@mixin heading-scale($levels: 1 2 3 4 5 6) {
+  @each $l in $levels {
+    h#{$l} {
+      font-size: 1.25em + (6 - $l)*.25em;
+    }
+  }
+}

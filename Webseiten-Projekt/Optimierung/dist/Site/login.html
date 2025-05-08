@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><title>Login und Registrierung | Englisch Lerner</title><link rel="stylesheet" href="../styles.css"><style>form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form div {
+            display: flex;
+            align-items: center;
+        }
+
+        form label {
+            flex: 1;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        form input, form select {
+            flex: 2;
+            padding: 5px;
+        }
+
+        .submit-btn {
+            align-self: flex-end;
+            padding: 7px 15px;
+        }
+
+        fieldset {
+            padding: 15px;
+            margin-bottom: 20px;
+        }</style></head><body><header><img src="../axolotl_bucket.png" alt="Logo"></header><main><h2>Registrierung</h2><form action="index.html" method="post"><fieldset><legend>Benutzerdaten</legend><div><label>Geschlecht:</label> <input type="radio" id="male" name="geschlecht" required> <label for="male">Männlich</label> <input type="radio" id="female" name="geschlecht"> <label for="female">Weiblich</label> <input type="radio" id="divers" name="geschlecht"> <label for="female">Divers</label></div><div><label for="vorname">Vorname:</label> <input type="text" id="vorname" name="vorname" required></div><div><label for="nachname">Nachname:</label> <input type="text" id="nachname" name="nachname" required></div><div><label for="email">E-Mail:</label> <input type="email" id="email" name="email" required></div><div><label for="password">Passwort:</label> <input type="password" id="password" name="password" required></div><div><label for="adresse">Adresse:</label> <input type="text" id="adresse" name="adresse" required></div><div><label for="plz">PLZ:</label> <input type="text" id="plz" name="plz" required></div><div><label for="ort">Ort:</label> <input type="text" id="ort" name="ort" required></div><div><label for="land">Land:</label> <select id="land" name="land" required><option value="">Wähle ein Land...</option><option>Deutschland</option><option>Österreich</option><option>Schweiz</option><option>Frankreich</option><option>England</option><option>Italien</option><option>Polen</option><option>Belgien</option><option>Niederlande</option><option>USA</option></select></div><div><label for="privacy">Datenschutz akzeptieren:</label> <input type="checkbox" id="privacy" name="privacy" required></div><input type="submit" value="Registrieren" class="submit-btn"></fieldset></form><hr><h2>Login</h2><form action="index.html" method="post"><div><label for="login-email">E-Mail:</label> <input type="email" id="login-email" name="login-email" required></div><div><label for="login-password">Passwort:</label> <input type="password" id="login-password" name="login-password" required></div><input type="submit" value="Login" class="submit-btn"></form><p><a href="#password-reset">Passwort vergessen?</a></p><hr><h2 id="password-reset">Passwort vergessen</h2><form action="login.html" method="post"><div><label for="reset-email">E-Mail:</label> <input type="email" id="reset-email" name="reset-email" required></div><input type="submit" value="Passwort zurücksetzen" class="submit-btn"></form></main><footer><p>All Rights Reserved</p></footer></body></html>

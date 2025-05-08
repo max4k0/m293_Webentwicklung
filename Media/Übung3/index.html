@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übung 3 – Slick Carousel</title>
+
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    .carousel img { width: 100%; display: block; }
+    .carousel { max-width: 600px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>Übung3 – Slick Carousel</h1>
+  <div class="carousel">
+    <div><img src="images/1.jpg"></div>
+    <div><img src="images/2.jpg"></div>
+    <div><img src="images/3.jpg"></div>
+  </div>
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000
+      });
+    });
+  </script>
+</body>
+</html>
