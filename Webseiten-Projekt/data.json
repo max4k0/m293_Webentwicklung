@@ -1,0 +1,59 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Lektion 1: Tiere",
+      "cards": [
+        { "en": "cat",   "de": "Katze" },
+        { "en": "dog",   "de": "Hund" },
+        { "en": "bird",  "de": "Vogel" },
+        { "en": "cow",   "de": "Kuh" },
+        { "en": "horse", "de": "Pferd" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Lektion 2: Küche",
+      "cards": [
+        { "en": "knife",     "de": "Messer" },
+        { "en": "fork",      "de": "Gabel" },
+        { "en": "spoon",     "de": "Löffel" },
+        { "en": "plate",     "de": "Teller" },
+        { "en": "cup",       "de": "Tasse" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Lektion 3: Reisen",
+      "cards": [
+        { "en": "train",     "de": "Zug" },
+        { "en": "airport",   "de": "Flughafen" },
+        { "en": "ticket",    "de": "Fahrkarte" },
+        { "en": "luggage",   "de": "Gepäck" },
+        { "en": "hotel",     "de": "Hotel" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Lektion 4: Freizeit",
+      "cards": [
+        { "en": "football",  "de": "Fussball" },
+        { "en": "music",     "de": "Musik" },
+        { "en": "movie",     "de": "Film" },
+        { "en": "book",      "de": "Buch" },
+        { "en": "painting",  "de": "Gemälde" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Lektion 5: Büro",
+      "cards": [
+        { "en": "computer",  "de": "Computer" },
+        { "en": "desk",      "de": "Schreibtisch" },
+        { "en": "pen",       "de": "Stift" },
+        { "en": "paper",     "de": "Papier" },
+        { "en": "meeting",   "de": "Besprechung" }
+      ]
+    }
+  ]
+}

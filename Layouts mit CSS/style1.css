@@ -1,0 +1,83 @@
+body {
+    font-family: din-2014, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input[type="radio"] { display: none; }
+
+.category-selector label {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+input#filme:checked ~ .category-selector label[for="filme"],
+input#musikalben:checked ~ .category-selector label[for="musikalben"],
+input#bilder:checked ~ .category-selector label[for="bilder"] {
+    background: #0056b3;
+
+
+
+}
+
+.media-container {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.media-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.media-item img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.media-info {
+    text-align: left;
+}
+
+
+.container-bilder .media-item {
+    flex-direction: column;
+}
+
+.container-bilder .media-item img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+}
+
+.container-bilder .media-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+#filme:checked ~ .container-filme,
+#musikalben:checked ~ .container-musikalben,
+#bilder:checked ~ .container-bilder {
+    display: flex;
+}
